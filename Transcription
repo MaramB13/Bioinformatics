@@ -1,0 +1,9 @@
+#Transcribing a DNA string into RNA
+DNA = input()
+
+def DNAtoRNA(DNA):
+    RNA=""
+    if "T" in DNA:
+        RNA = DNA.replace("T", "U")
+    return RNA
+print(DNAtoRNA(DNA))
