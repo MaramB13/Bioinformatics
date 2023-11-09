@@ -1,0 +1,10 @@
+#Counting nucleotides in a DNA sequence
+DNA = input()
+
+def countDNA(DNA):
+    nucleotides ={"A":0, "C":0, "G":0, "T":0}
+    #Can also add "N":0 if there are N unknowns in the sequence
+    for i in DNA:
+        nucleotides[i]+=1
+    return (str(list(nucleotides.values()))).replace("[", "").replace(",", "").replace("]", "")
+print(countDNA(DNA))
