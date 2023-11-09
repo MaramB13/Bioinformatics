@@ -1,0 +1,17 @@
+#Rosalind: Complementing a strand of DNA
+
+DNA = input()
+DNA = DNA[::-1]
+def DNA_comp(DNA):
+    Comp=""
+    for i in DNA:
+        if i == "A" in DNA:
+            Comp += "T"
+        elif i == "T" in DNA:
+            Comp += "A"
+        elif i == "C" in DNA:
+            Comp += "G"
+        elif i == "G" in DNA:
+            Comp += "C"
+    return Comp
+print(DNA_comp(DNA))
